@@ -1,0 +1,11 @@
+#!/usr/bin/env python
+# _*_ coding:utf-8 _*_
+__author__ = "Youxk"
+
+def bubbleSort(aList):
+	for i in range(len(aList)-1):
+		for j in range(len(aList)-i-1):
+			if aList[j] > aList[j+1]:
+				aList[j], aList[j+1] = aList[j+1], aList[j]
+	return aList
+
